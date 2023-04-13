@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LogoArgprComponent } from './logo-argpr.component';
+import { NavComponent } from './nav.component';
 
-describe('LogoArgprComponent', () => {
-  let component: LogoArgprComponent;
-  let fixture: ComponentFixture<LogoArgprComponent>;
+describe('NavComponent', () => {
+  let component: NavComponent;
+  let fixture: ComponentFixture<NavComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LogoArgprComponent ]
+      declarations: [ NavComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LogoArgprComponent);
+    fixture = TestBed.createComponent(NavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

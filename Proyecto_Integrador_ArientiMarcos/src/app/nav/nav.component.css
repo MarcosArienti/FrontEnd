@@ -1,0 +1,13 @@
+.navbar {
+    padding: 0.5rem;
+    background-color: #f5f6f7;
+}
+
+.bg-col {
+    background-color: #04d9f5;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
