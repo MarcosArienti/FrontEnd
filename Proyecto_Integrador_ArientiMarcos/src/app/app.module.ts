@@ -8,6 +8,10 @@ import { NavComponent } from './nav/nav.component';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 import { SkillsComponent } from './skills/skills.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ExpComponent } from './exp/exp.component';
+import { EducationComponent } from './education/education.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProyectsComponent } from './proyects/proyects.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     NavComponent,
     AcercaDeComponent,
     SkillsComponent,
+    ExpComponent,
+    EducationComponent,
+    FooterComponent,
+    ProyectsComponent,
     
   ],
   imports: [

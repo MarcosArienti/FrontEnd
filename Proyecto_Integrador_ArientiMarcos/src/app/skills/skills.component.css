@@ -9,3 +9,6 @@
     font-weight: 100px;
 }
 
+.col {
+    justify-content: space-between;
+}
