@@ -1,0 +1,24 @@
+footer {
+    background-color: black;
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.title{
+    margin-top: 3rem;
+}
+
+.icons {
+    align-items: center;
+    line-height: 20px;
+}
+
+.icon {
+    margin-left: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    height: 30px;
+}
