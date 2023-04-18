@@ -12,3 +12,24 @@
     justify-content: space-between;
 }
 
+.btn {
+    background-color: #04d9f5;
+    border-color: aqua;
+}
+
+.btn:hover {
+    background-color: #04edf6;
+    border-color: white;
+}
+
+.btn:active {
+    background-color: #04eef6de;
+}
+
+@media (max-width: 760px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
