@@ -1,0 +1,81 @@
+body {
+    background-image: url('../../assets/sky.jpg');
+    background-size: cover;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.login-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+    
+}
+
+.login-form {
+	background-color: #ffffff;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.login-form h2 {
+	margin-top: 0;
+}
+
+.login-form label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.login-form input {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+	font-size: 1rem;
+}
+
+.login-form button {
+	background-color: #00ffffce;
+	color: #ffffff;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.login-form button:hover {
+	background-color: #00ffff;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo del formulario */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }

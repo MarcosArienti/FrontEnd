@@ -18,7 +18,8 @@
             <a class="nav-link" href="#">Contacto</a>
           </li>
           <li>
-            <button class="btn btn-primary" type="button">Ingresar</button>
+            <button class="btn btn-primary" type="button" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+            <button class="btn btn-primary" type="button" (click)="onLogOut()" *ngIf="isLogged">Salir</button>
           </li>
         </ul>
       </div>
