@@ -1,23 +1,31 @@
 <div class="row">
     <h2>Educacion</h2>
-    <div class="col-l0">
-        <ul>
-            <li>
-                <h2 class="fs-2">Universidad</h2> - <h4>Years</h4>
-            </li>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at neque felis. Proin pharetra, arcu sit amet eleifend elementum, elit diam tristique eros, sed congue velit odio eu felis. Ut euismod eros maximus, facilisis nulla et, laoreet ante. Nam et augue fringilla, fringilla augue at, malesuada mi. Etiam nec molestie nulla. Morbi ullamcorper eleifend lectus elementum lobortis. Nam ac porttitor elit. Nam ut hendrerit urna, sed imperdiet nisi. Vivamus auctor ut risus in finibus. Vestibulum id lacinia sem, vitae feugiat odio. Aenean scelerisque pharetra ex, non rutrum sem. Aenean aliquam neque id tortor vehicula, vel dapibus arcu pharetra.
-            </p>
-        </ul>
+    <div class="col lg">
+      <button type="btn" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+        Agregar Educacion
+      </button>
     </div>
-    <div class="col-l0">
-        <ul>
-            <li>
-                <h2 class="fs-2">Secundario</h2> - <h4>Years</h4>
-            </li>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at neque felis. Proin pharetra, arcu sit amet eleifend elementum, elit diam tristique eros, sed congue velit odio eu felis. Ut euismod eros maximus, facilisis nulla et, laoreet ante. Nam et augue fringilla, fringilla augue at, malesuada mi. Etiam nec molestie nulla. Morbi ullamcorper eleifend lectus elementum lobortis. Nam ac porttitor elit. Nam ut hendrerit urna, sed imperdiet nisi. Vivamus auctor ut risus in finibus. Vestibulum id lacinia sem, vitae feugiat odio. Aenean scelerisque pharetra ex, non rutrum sem. Aenean aliquam neque id tortor vehicula, vel dapibus arcu pharetra.
-            </p>
-        </ul>
+    <div class="col-lg-11">
+      <table class="table">
+        <tbody>
+          <tr *ngFor="let Educacion of educacion">
+            <td>
+              <h2>{{ Educacion.nombreE }}</h2>
+            </td>
+            <td>{{ Educacion.descripcionE }}</td>
+            <td *ngIf="isLogged">
+              <button class="btn btn-dark"  routerLink="/editedu/{{ Educacion.id }}">
+                <i class="bi bi-pencil"></i>Editar
+              </button>
+            </td>
+            <td *ngIf="isLogged">
+              <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                  <i class="bi bi-trash"></i>Borrar
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</div>
+  </div>
+  

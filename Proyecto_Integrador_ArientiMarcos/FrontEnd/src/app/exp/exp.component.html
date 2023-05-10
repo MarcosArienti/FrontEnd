@@ -1,23 +1,30 @@
 <div class="row">
-    <h2>Experiencia laboral</h2>
-    <div class="col-l0">
-        <ul>
-            <li>
-                <h2 class="fs-2">First Job</h2> - <h4>Years</h4>
-            </li>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at neque felis. Proin pharetra, arcu sit amet eleifend elementum, elit diam tristique eros, sed congue velit odio eu felis. Ut euismod eros maximus, facilisis nulla et, laoreet ante. Nam et augue fringilla, fringilla augue at, malesuada mi. Etiam nec molestie nulla. Morbi ullamcorper eleifend lectus elementum lobortis. Nam ac porttitor elit. Nam ut hendrerit urna, sed imperdiet nisi. Vivamus auctor ut risus in finibus. Vestibulum id lacinia sem, vitae feugiat odio. Aenean scelerisque pharetra ex, non rutrum sem. Aenean aliquam neque id tortor vehicula, vel dapibus arcu pharetra.
-            </p>
-        </ul>
-    </div>
-    <div class="col-l0">
-        <ul>
-            <li>
-                <h2 class="fs-2">First Job</h2> - <h4>Years</h4>
-            </li>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at neque felis. Proin pharetra, arcu sit amet eleifend elementum, elit diam tristique eros, sed congue velit odio eu felis. Ut euismod eros maximus, facilisis nulla et, laoreet ante. Nam et augue fringilla, fringilla augue at, malesuada mi. Etiam nec molestie nulla. Morbi ullamcorper eleifend lectus elementum lobortis. Nam ac porttitor elit. Nam ut hendrerit urna, sed imperdiet nisi. Vivamus auctor ut risus in finibus. Vestibulum id lacinia sem, vitae feugiat odio. Aenean scelerisque pharetra ex, non rutrum sem. Aenean aliquam neque id tortor vehicula, vel dapibus arcu pharetra.
-            </p>
-        </ul>
-    </div>
+  <h2>Experiencia laboral</h2>
+  <div class="col lg">
+    <button type="btn" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+      Nueva Experiencia
+    </button>
+  </div>
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Experiencia of expe">
+          <td>
+            <h2>{{ Experiencia.nombreE }}</h2>
+          </td>
+          <td>{{ Experiencia.descripcionE }}</td>
+          <td *ngIf="isLogged">
+            <button class="btn btn-dark"  routerLink="/editexp/{{ Experiencia.id }}">
+              <i class="bi bi-pencil"></i>Editar
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                <i class="bi bi-trash"></i>Borrar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
