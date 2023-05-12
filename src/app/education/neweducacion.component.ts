@@ -29,7 +29,6 @@ export class NeweducacionComponent implements OnInit{
         alert("Fail");
         this.router.navigate(['']);
       }
-      )
+    )
   }
-
 }

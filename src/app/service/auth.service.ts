@@ -9,8 +9,8 @@ import { JwtDto } from '../model/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService {
-  //authURL = 'http://localhost:8080/auth/'
-  authURL = 'https://backend-msaa.onrender.com/auth/'
+  authURL = 'http://localhost:8080/auth/'
+  //authURL = 'https://backend-msaa.onrender.com/auth/'
 
   constructor(private httpClient: HttpClient) { }
 
