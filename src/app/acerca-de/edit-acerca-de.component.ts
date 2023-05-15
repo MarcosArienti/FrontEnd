@@ -38,6 +38,9 @@ export class EditAcercaDeComponent implements OnInit {
       }
     )
   }
-  uploadImage($event:any) {}
+
+  uploadImage($event:any) {
+
+  }
 
 }

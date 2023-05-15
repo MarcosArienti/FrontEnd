@@ -20,7 +20,7 @@ export class EdiEducacionComponent implements OnInit{
       data =>{
         this.educacion = data;
       }, err => {
-        alert("Error al modificar experiencia");
+        alert("Error al modificar educacion");
         this.router.navigate(['']);
       }
     )
