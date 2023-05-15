@@ -22,6 +22,7 @@ import { NeweducacionComponent } from './education/neweducacion.component';
 import { EdiEducacionComponent } from './education/edi-educacion.component';
 import { EditSkillComponent } from './skills/edit-skill.component';
 import { NewSkillComponent } from './skills/new-skill.component';
+import { EditAcercaDeComponent } from './acerca-de/edit-acerca-de.component';
 
 
 
@@ -43,6 +44,7 @@ import { NewSkillComponent } from './skills/new-skill.component';
     EdiEducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
+    EditAcercaDeComponent,
     
   ],
   imports: [
