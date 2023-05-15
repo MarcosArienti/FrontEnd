@@ -46,9 +46,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     NeweducacionComponent,
     EdiEducacionComponent,
     EditSkillComponent,
-    NewSkillComponent,
-    EditAcercaDeComponent,
-    
+    NewSkillComponent,    
   ],
   imports: [
     BrowserModule,
