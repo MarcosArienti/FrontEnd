@@ -9,8 +9,6 @@ export const environment = {
     messagingSenderId: '50843312291',
   },
     production: false,
-
-    //URL: 'http://localhost:8080/educacion/',
-    URL: 'https://backend-msaa.onrender.com/educacion/'
+    URL: 'http://localhost:8080/educacion/',
 
 };

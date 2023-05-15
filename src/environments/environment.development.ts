@@ -7,4 +7,10 @@ export const environment = {
     apiKey: 'AIzaSyAqkxVSwhJLUfENYw7_hHVS7aOEaI2FD1E',
     authDomain: 'msaa-portfolio.firebaseapp.com',
     messagingSenderId: '50843312291',
-  },};
+    
+  },
+  
+  production: true,
+  URL: 'https://backend-msaa.onrender.com/educacion/'
+
+};
