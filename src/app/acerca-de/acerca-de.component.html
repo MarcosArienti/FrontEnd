@@ -1,6 +1,9 @@
 <section class="hero align-items-stretch">
+    <button type="btn" class="btn btn-dark" routerLink="/editacercade/1" *ngIf="isLogged">
+        Editar persona
+     </button>   
     <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-        <img src="../../assets/foto-cv.jpg" class="hero-imagen-desarrollador img-thumbnail rounded-circle" alt="Foto de Marcos Arienti">
+        <img src={{persona.img}} class="hero-imagen-desarrollador img-thumbnail rounded-circle" alt="Foto">
         <h1 id="nombre">{{persona.nombre}} {{persona.apellido}}</h1>
         <h2>Full Stack Developer Jr.</h2>
     </div>
@@ -11,6 +14,6 @@
 <section class="sobre-mi seccion-oscura">
     <div class="contenedor">
         <h2 class="seccion-titulo">Acerca de mí</h2>
-        <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis maximus nibh. Vestibulum mattis suscipit rhoncus. Sed volutpat purus ante, ut sollicitudin purus sagittis quis. Sed volutpat accumsan sapien, non fringilla lorem sagittis dignissim. Proin finibus porttitor quam, sit amet egestas libero dictum quis. Aliquam rhoncus velit ut nisi rhoncus efficitur. Morbi semper lacus ac massa sodales facilisis.</p>
+        <p class="seccion-texto">{{persona.descripcion}}</p>
     </div>
 </section>
